@@ -1,0 +1,47 @@
+Naive bias
+
+> it's a machine learning algo which is used to classify data into predifined class
+> it uses the concept of conditional probability to classify the data
+
+conditional prob
+
+> it helps us to find the probability that something will happen given that something else has happend
+
+> consider two events A and B then;
+	P(A/B) = (P(A)*P(B/A)) / P(B)
+
+example data set:
+
+		Sr.No	color	 type	origin		Stlolen
+		1	Red	Sport	Domestic	Yes
+		2	Red	Sport	Domestic	No
+		3	Red	Sport	Imported	No
+		4	Yellow	Sport	Imported	Yes
+		5	Yellow	SUV	Imported	Yes
+		6	Red	Sport	Imported	Yes
+
+	Question-- 	Given X = Yellow, Sport, Domestic 
+			find it will be stolen or not ?
+
+	P(color/stolen) ->
+		P(Red/Yes)=2/4;	
+		P(Red/No)=2/2;	
+		P(Yellow/Yes)=2/4;	
+		P(Yellow/No)=0/2;
+
+	P(type/stolen) ->
+		P(Sport/Yes)=3/4;	
+		P(Sport/No)=2/2;	
+		P(SUV/Yes)=1/4;	
+		P(SUV/No)=0/2;
+
+	P(origin/stolen) ->
+		P(Domestic/Yes)=1/4;	
+		P(Domestic/No)=1/2;	
+		P(Imported/Yes)=3/4;	
+		P(Imported/No)=1/2;
+
+`	now: 
+		P=(X/Yes) = P(Yellow/Yes) * P(Sport/Yes) * P(Domestic/Yes) = 0.8
+		P=(X/No) = P(Yellow/No) * P(Sport/No) * P(Domestic/No) = 0.5
+
