@@ -1,0 +1,18 @@
+__pycache__
+db_utils/__pycache__
+logs
+wrappers/__pycache__
+.DS_Store
+Basic_NN/wandb
+Basic_NN/__pycache__
+env
+
+#Ignore temp and swp files
+*~
+*.swp
+*.swo
+tags
+.comet/
+memo.rb
+.vimspector.json
+.vscode/
